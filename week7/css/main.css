@@ -76,16 +76,51 @@ nav ul a {
     /* Viewport based units */
     /* width: 100vw */
     width: 50%;
+    /* position reletibe */
+    position: relative;
+    
 }
+/* absolute position */
+.blue-link.large-text {
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+}
+
 
 .blue-link {
     background-color: darkslategray;
     color: antiquewhite;
     text-decoration: none;
+    /* em-1.5 x's the font size */
+    padding: 1.5em;
+    width: 300px;
+    display: block;
+
 }
 
 .large-text {
     font-size: 24px;
+}
+
+/*  Example of float layout */
+
+article,
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1.5em;  
+    box-sizing: border-box;
+    float: left; 
+}
+
+aside {
+    width: 20%;
+}
+
+section {
+    clear: both;
+
 }
 
 .white-text {
