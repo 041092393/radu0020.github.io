@@ -78,7 +78,8 @@ nav ul a {
     width: 50%;
     /* position reletibe */
     position: relative;
-    
+    padding: 1em 1em 4em 1em;
+
 }
 /* absolute position */
 .blue-link.large-text {
@@ -154,6 +155,16 @@ h3 ~ p {
 
 [src $= ".jpg"] {
     border: 8px solid darkslategray;
+}
+
+/* fixed navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
 }
 
 /* Using pseudo classes */

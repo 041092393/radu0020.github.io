@@ -1,0 +1,39 @@
+body {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer{
+    background-color: blueviolet;
+}
+
+.site-title {
+    color:aquamarine;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.hobbies :nth-child(odd) {
+    background-color: aquamarine;
+}
+
+.nav, a {
+    list-style-type:none;
+    text-decoration: none;
+   
+}
+a {
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius:5px;
+}
+
+a:hover {
+    background-color: antiquewhite;
+}
