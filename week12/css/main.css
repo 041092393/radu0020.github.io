@@ -1,0 +1,25 @@
+/* font-family: 'Poppins', sans-serif; */
+
+h1 {
+    font-family:'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fa-ghost {
+    font-size: 6rem;
+    color:blueviolet;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin:0 auto;
+    display: block;
+}
