@@ -24,7 +24,7 @@
                         <img src="images/logo.png" alt="three star media logo" class="logo">
                     </div>
                     <ul>
-                        <li class="currentnav"><a href="index.html">Home</a></li>
+                        <li><a class="list" href="index.html" id="navhome">Home</a></li>
                         <li><a class="list" href="about.html">About Us</a></li>
                         <li><a class="list" href="services.html">Services</a></li>
                         <li><a class="list" href="team.html">Team</a></li>
@@ -54,7 +54,7 @@
         <section class="about">
             <div class="about-container">
                 <div id="image-about">
-                    <img src="images/about-us.jpg" alt="Ping pong table">
+                    <img id="aboutImage" src="images/about-us.jpg" alt="Ping pong table">
                 </div>
                 <div id="text-about">
                     <h2>About Us</h2>
@@ -75,23 +75,27 @@
         <section class="services">
             <h2 class="our-services">Our Services</h2>
             <div class="cards digital">
-                <img src="images/digital.jpg" alt="a laptop and a phone">
+                <img src="images/digital.jpg" alt="a laptop and a phone" class="card-images">
                 <h3>Digital Transformation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, iure illum sed laborum atque harum?
                     Distinctio, ducimus ut quisquam facere soluta debitis, et quia deserunt corporis, ipsa sed fugiat
+                    laborum.Distinctio, ducimus ut quisquam facere soluta debitis, et quia deserunt corporis, ipsa sed fugiat
+                    laborum.Distinctio, ducimus ut quisquam facere soluta debitis, et quia deserunt corporis, ipsa sed fugiat
                     laborum.</p>
                 <a href="#" class="btn-card">Digital Plans<i class="fa-solid fa-caret-right fa-white"></i></a>
             </div>
             <div class="cards marketing">
-                <img src="images/marketing.jpg" alt="laptop with charts on the screen">
+                <img src="images/marketing.jpg" alt="laptop with charts on the screen" class="card-images">
                 <h3>Marketing</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quaerat recusandae aperiam fuga
                     pariatur cum ullam quod excepturi explicabo expedita ad at aspernatur perferendis accusamus quos
-                    corrupti eaque, totam vel?</p>
+                    corrupti eaque, totam vel?Distinctio, ducimus ut quisquam facere soluta debitis, et quia deserunt corporis, ipsa sed fugiat
+                    laborum.Distinctio, ducimus ut quisquam facere soluta debitis, et quia deserunt corporis, ipsa sed fugiat
+                    laborum.</p>
                 <a href="#" class="btn-card">Marketing Plans<i class="fa-solid fa-caret-right fa-white"></i></a>
             </div>
             <div class="cards video">
-                <img src="images/video.jpg" alt="hand holding a cell phone">
+                <img src="images/video.jpg" alt="hand holding a cell phone" class="card-images">
                 <h3>Video Production</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minus sequi, animi eaque saepe
                     perspiciatis error minima. Atque quasi hic, iure laboriosam voluptatum saepe, nam perspiciatis
@@ -99,7 +103,7 @@
                 <a href="#" class="btn-card">Video Plans<i class="fa-solid fa-caret-right fa-white"></i></a>
             </div>
             <div class="cards web">
-                <img src="images/web.jpg" alt="a cell phone on top of a notebook with a pen">
+                <img src="images/web.jpg" alt="a cell phone on top of a notebook with a pen" class="card-images">
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut error magnam numquam quo voluptate amet
                     qui corrupti tenetur doloremque, labore placeat, illo deserunt! Nam officia incidunt aut eius
@@ -107,7 +111,7 @@
                 <a href="#" class="btn-card">Web Plans<i class="fa-solid fa-caret-right fa-white"></i></a>
             </div>
             <div class="cards print">
-                <img src="images/print.jpg" alt="mail boxes infront of the road/vehicles">
+                <img src="images/print.jpg" alt="mail boxes infront of the road/vehicles" class="card-images">
                 <h3>Print</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis necessitatibus laboriosam, illo
                     qui magnam alias nemo enim inventore maxime facilis. Ut officiis voluptates debitis quidem esse
@@ -151,15 +155,15 @@
                 <h5>Send us a message</h5>
                 <form action="/final-project.php" method="post" class="form">
                     <div>
-                        <label for="fullname">Full Name</label>
+                        <label for="fullname" class="word-space">Full Name</label>
                         <input type="text" name="fullname" id="fullname">
                     </div>
                     <div>
-                        <label for="youremail">Email</label>
+                        <label for="youremail" class="word-space">Email</label>
                         <input type="email" name="youremail" id="youremail" required>
                     </div>
                     <div>
-                        <label for="message">Message</label>
+                        <label for="message" class="word-space">Message</label>
                         <textarea name="message" id="message"></textarea>
                     </div>
                     <div>

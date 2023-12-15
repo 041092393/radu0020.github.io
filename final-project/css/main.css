@@ -81,7 +81,7 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 /* welcome text */
@@ -94,16 +94,20 @@ h2 {
     padding-bottom: 20px;
     
 }
+
+h3 {
+   font-size: 25px; 
+}
 /* connect with us button */
 .btn {
     background-color: #C78B07;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     color:black;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-left: 13px;
 }
 /* paragraph indentation */
@@ -141,7 +145,17 @@ a:link {
     color:#C78B07; 
 }
 
-.list:hover,
+.list:visited {
+    text-decoration: none;
+    color: #C78B07;
+}
+.list:hover {
+    color: black;
+    background-color: #C78B07;
+    width:100%;
+    display:inline-block;
+}
+/* .list:hover,
 .list:focus,
 .list.visited,
 .list.active {
@@ -149,7 +163,7 @@ a:link {
     color: #000000;
     width:100%;
     display:inline-block;
-}
+} */
 
 .currentnav {
     background-color: #C78B07;
@@ -188,20 +202,52 @@ a:link {
 
 /* ABOUT US */
 
-
-
 .cards, .about {
     background-color:#FFE6AC;
-    border: 15px solid #FFE6AC;
+    
 }
 
+.about-container { 
+    padding-bottom: 15px;
+    border: 10px solid #FFE6AC;
+}
+#aboutImage {
+    width: 100%;
+    
+}
+/* Our Services */
+.our-services {
+    
 
-.btn-card, btn {
+
+}
+.services p {
+    margin-bottom: 40px;
+}
+
+.services .card-images{
+    width: 100%;
+}
+.cards {
+    border-bottom: 40px solid #FFE6AC;
+}
+
+.btn-card {
     width: fit-content;
     /* padding: 30px; */
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
+    margin-left: 14px;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
 }
+
+.fa-caret-right {
+    padding-left: 10px;
+} 
 
 .btn-card {
     background-color: black; 
@@ -220,17 +266,67 @@ a:link {
 
 .banner_two p, .banner_two h3{
     color: white;
+    margin-left: 0px;
+
     
+}
+.banner_two p {
+    margin-bottom: 40px;
 }
 
 .banner_two h3 {
     font-size: 30px;
     padding-top: 10px;
+    
 }
 
+.banner_two {
+    padding-bottom: 40px;
+    padding-left: 10px;
+}
+
+#btn-banner {
+    color: white;
+    background-color: rbga(0,0,0,0.5);
+    border: 1px solid #C78B07; 
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    width: fit-content;
+}
+/* CEO OWNERS */
 #john, #bob {
     background-color:#FFE6AC;
 }
+
+.team {
+    align-content: center;
+    background-color:#FFE6AC;
+    padding-bottom: 7px;
+}
+
+.team h4 {
+    padding-bottom: 4px;
+    border-bottom: 2px solid #C78B07;
+}
+
+/* FORM STYLING */
+
+.contact {
+    margin-top: 50px;
+}
+
+#fullname, #youremail, #message {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#message {
+    height: 100px;
+}
+
 
 table {
     width: 100%;
@@ -256,9 +352,7 @@ th {
     margin-bottom: 15px;
 }
 
-.team {
-    align-content: center;
-}
+
 
 @media screen and (min-width: 760px){
 .container {
@@ -281,15 +375,48 @@ th {
     padding-top: 30px;
 }
 
+/* Welcome Styling */
+.welcome-section {
+    background-color: rgba(0,0,0,0.5);
+    margin-left: 70px;
+    margin-right: 70px;
+}
+/* about us styling */
+.about-container { 
+    padding-bottom: 15px;
+    border: 10px solid #FFE6AC;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* styling services cards */
+.cards {
+    margin: 10px;
+}
+
+.contact h3 {
+   grid-template-rows: 1fr;
+}
+/*  */
+#fullname, #youremail {
+    height: 30px;
+    width:95%;
+}
+
+#message {
+    height: 313px;
+    width: 95%;
+}
+    
+
 #search {
     width: 400px;
 }
-
+/* ABOUT US */
 .about-container {
     display: flex;
     flex-direction: row;
 }
-
+/* services */
 .services {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -322,6 +449,7 @@ th {
 .print {
     grid-area: print;
 }
+/* ******** OUR TEAM ****** */
 
 .team {
     display: grid;
@@ -351,7 +479,7 @@ th {
 .contact {
     display: grid;
     grid-template-columns:repeat(2, 1fr) ;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, autos);
     grid-template-areas: "contact contact" "form map" "form map" "time time" 
 }
 
@@ -370,9 +498,5 @@ th {
 #hours{
     grid-area: time;
 }
-
-
-
-
-
 }
+
